@@ -11,7 +11,6 @@ Purchase Management and many more.
 actpy Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
 a full-featured <a href="https://actpy.com">Open Source ERP</a> when you install several Apps.
 
-Additional Apps for actpy are available here : https://gitlab.com/actpy-hq/extra-addons
 
 Getting started with actpy
 ----------------------------
