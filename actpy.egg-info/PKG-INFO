@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: actpy
+Version: 1.2
+Summary: actpy Server
+Home-page: https://www.actpy.com
+Author: OpenERP S.A., actpy
+Author-email: info@actpy.com
+License: LGPL-3
+Description: actpy is a complete ERP and CRM. The main features are accounting (analytic
+        and financial), stock management, sales and purchases management, tasks
+        automation, marketing campaigns, help desk, POS, etc. Technical features include
+        a distributed server, an object database, a dynamic GUI,
+        customizable reports, and XML-RPC interfaces.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3
+Classifier: Programming Language :: Python
