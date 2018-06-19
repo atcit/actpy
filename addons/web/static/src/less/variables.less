@@ -1,0 +1,81 @@
+///
+/// This file regroups the LESS variables that style actpy components.
+/// They are available in every asset bundle.
+///
+
+// Font sizes
+@actpy-font-size-base: 13px;
+
+// Colors
+@actpy-brand-primary: #009efb;
+@actpy-brand-optional: #009efb;
+@actpy-brand-secondary: #f0eeee;
+@actpy-brand-lightsecondary: #e2e2e0;
+@actpy-color-silver: #f1f3f6;
+@actpy-color-silver-dark: #E5E5E5;
+@actpy-color-silver-darker: #d9d7d7;
+
+// Define @gray-lighter-dark as a minor bootstrap @gray-lighter variation used
+// for design purposes only (e.g. cards' borders). We avoid to overwrite the
+// default @gray-light because it is deeply used by bootstrap to define muted
+// elements.
+@gray-lighter-dark: @actpy-color-silver-dark;
+@gray-lighter-darker: @actpy-color-silver-darker;
+
+@actpy-color-pink: #875A7B; // Enterprise @actpy-brand-primary
+@actpy-main-color-muted: #a8a8a8;
+@actpy-main-text-color: #4c4c4c;
+
+@actpy-view-background-color: white;
+@actpy-shadow-color: #303030;
+
+@actpy-webclient-background-color: @actpy-color-silver;
+@actpy-control-panel-background-color: @actpy-color-silver;
+@actpy-form-lightsecondary: #ccc;
+
+@actpy-list-footer-color: @actpy-main-text-color;
+@actpy-list-footer-bg-color: #eee;
+@actpy-list-footer-font-weight: bold;
+
+@actpy-tooltip-background-color: black;
+@actpy-tooltip-color: white;
+@actpy-tooltip-arrow-color: black;
+
+// UI custom colors for tags, kanban records' colors, ...)
+@actpy-nb-ui-color: 12;
+@actpy-color-0: @gray-light;
+@actpy-color-1: #F06050;
+@actpy-color-2: #F4A460;
+@actpy-color-3: #F7CD1F;
+@actpy-color-4: #6CC1ED;
+@actpy-color-5: #814968;
+@actpy-color-6: #EB7E7F;
+@actpy-color-7: #2C8397;
+@actpy-color-8: #475577;
+@actpy-color-9: #D6145F;
+@actpy-color-10: #30C381;
+@actpy-color-11: #9365B8;
+
+// Layout
+@screen-xs-min: 475px;
+@screen-xxs-max: (@screen-xs-min - 1);
+
+@actpy-form-group-cols: 12;
+@actpy-form-spacing-unit: 5px;
+@actpy-horizontal-padding: 16px;
+@actpy-innergroup-rpadding: 45px;
+@actpy-dropdown-hpadding: 20px;
+
+@border-radius-base: 3px;
+
+@actpy-sheet-vpadding: 24px;
+
+@actpy-avatar-size: 90px;
+
+@actpy-statusbar-height: 33px;
+@actpy-statusbar-arrow-width: @actpy-statusbar-height/3;
+@actpy-statusbar-disabled-bg: lighten(@actpy-brand-lightsecondary, 7%);
+
+@actpy-label-font-size-factor: 0.8;
+@actpy-navbar-height: 34px;
+@actpy-navbar-inverse-link-hover-bg: @navbar-inverse-link-active-bg;
