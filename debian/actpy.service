@@ -1,0 +1,14 @@
+[Unit]
+Description=actpy Open Source ERP and CRM
+After=network.target
+
+[Service]
+Type=simple
+User=actpy
+Group=actpy
+ExecStart=/usr/bin/actpy --config /etc/actpy/actpy.conf --logfile /var/log/actpy/actpy-server.log
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
+
