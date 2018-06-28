@@ -1,4 +1,4 @@
-Contributing to actpy
+Contributing to Actpy
 ========================
 
 TL;DR
