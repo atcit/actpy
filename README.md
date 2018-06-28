@@ -12,6 +12,4 @@ actpy Apps can be used as stand-alone applications, but they also integrate seam
 a full-featured <a href="https://actpy.com">Open Source ERP</a> when you install several Apps.
 
 
-Getting started with actpy
-----------------------------
-For a standard installation please follow this <a href="https://github.com/actpy/actpy">snippet</a>.
+
