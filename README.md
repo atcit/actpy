@@ -1,10 +1,10 @@
 
-Actpy
+ActGRP
 =======
 
-Actpy is a suite of web based open source business apps forked from Odoo ,  Flask , Flectra , ERPNext ..etc 
+ActGRP is a suite of web based open source business apps forked from Odoo ,  Flask , Flectra , ERPNext ..etc 
 
-The main actpy Apps include an Open Source CRM,Website Builder,eCommerce,Warehouse Management,
+The main ActGRP Apps include an Open Source CRM,Website Builder,eCommerce,Warehouse Management,
 Project Management,Billing &amp; Accounting,Point of Sale,Human Resources,Marketing,Manufacturing,
 Purchase Management and many more.
 
