@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e
+
+actpy_LIB_DIR=/var/lib/actpy
+actpy_USER="actpy"
+actpy_GROUP="actpy"
+
+case "${1}" in
+    remove)
+        deluser --quiet --system $actpy_USER || true
+        delgroup --quiet --system --only-if-empty $actpy_GROUP || true
+        if [ -d "$actpy_LIB_DIR" ]; then
+            rm -rf $actpy_LIB_DIR
+        fi
+        ;;
+
+    purge)
+        if [ -d "$actpy_LIB_DIR" ]; then
+            rm -rf $actpy_LIB_DIR
+        fi
+        ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        ;;
+
+esac
+
+#DEBHELPER#
+
+exit 0
