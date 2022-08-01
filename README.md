@@ -9,7 +9,7 @@ Project Management,Billing &amp; Accounting,Point of Sale,Human Resources,Market
 Purchase Management and many more.
 
 actpy Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured <a href="http://actpy.com">Open Source ERP</a> when you install several Apps.
+a full-featured <a href="http://bagoury.com">Open Source ERP</a> when you install several Apps.
 
 
 
