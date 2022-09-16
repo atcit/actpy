@@ -9,7 +9,7 @@ html2text==2016.9.19
 Jinja2==2.8
 lxml==3.7.1 ; sys_platform != 'win32'
 lxml ; sys_platform == 'win32'
-Mako==1.0.4
+Mako==1.2.2
 MarkupSafe==0.23
 mock==2.0.0
 num2words==0.5.4
