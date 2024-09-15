@@ -1,0 +1,2 @@
+debian/actpy.conf /etc/actpy
+README.md /usr/share/doc/actpy

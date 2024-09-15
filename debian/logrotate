@@ -1,0 +1,5 @@
+/var/log/actpy/*.log {
+    copytruncate
+    missingok
+    notifempty
+}

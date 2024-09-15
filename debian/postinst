@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -e
+
+actpy_CONFIGURATION_FILE=/etc/actpy/actpy.conf
+actpy_GROUP="actpy"
+actpy_DATA_DIR=/var/lib/actpy
+actpy_LOG_DIR=/var/log/actpy
+actpy_USER="actpy"
+
+case "${1}" in
+    configure)
+        if ! getent passwd | grep -q "^actpy:"; then
+            adduser --system --home $actpy_DATA_DIR --quiet --group $actpy_USER
+        fi
+        # Register "$actpy_USER" as a postgres user with "Create DB" role attribute
+        su - postgres -c "createuser -d -R -S $actpy_USER" 2> /dev/null || true
+        # Configuration file
+        chown $actpy_USER:$actpy_GROUP $actpy_CONFIGURATION_FILE
+        chmod 0640 $actpy_CONFIGURATION_FILE
+        # Log
+        mkdir -p $actpy_LOG_DIR
+        chown $actpy_USER:$actpy_GROUP $actpy_LOG_DIR
+        chmod 0750 $actpy_LOG_DIR
+        # Data dir
+        chown $actpy_USER:$actpy_GROUP $actpy_DATA_DIR
+        ;;
+    *)
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0
